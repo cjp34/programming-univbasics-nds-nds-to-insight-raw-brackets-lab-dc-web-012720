@@ -11,8 +11,8 @@ def directors_totals(nds)
     end
   directors += 1
 end
-    
-    
+
+p directors_totals
    # result = {
  # }
 end
