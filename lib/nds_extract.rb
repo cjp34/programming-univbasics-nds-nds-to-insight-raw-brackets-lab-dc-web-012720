@@ -1,5 +1,6 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
+require 'pry'
 
 def directors_totals(nds)
   total = 0
@@ -7,10 +8,12 @@ def directors_totals(nds)
   movie = 0
   result = {}
   while directors < nds.length do
+    binding.pry
     while movie < nds[directors][:movies].length do
       total += nds[directors][:movies][movie][:worldwide_gross]
       movie += 1
     end
+    
   directors += 1
 end
 
