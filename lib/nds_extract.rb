@@ -8,6 +8,7 @@ def directors_totals(nds)
   movie = 0
   result = {}
   while directors < nds.length do
+    result[:nds]
     binding.pry
     while movie < nds[directors][:movies].length do
       total += nds[directors][:movies][movie][:worldwide_gross]
